@@ -1,0 +1,22 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+
+.Countdown {
+    background-color: #DC143C;
+	width: fit-content;
+	margin: auto;
+	margin-top: 35px;
+}
+.Title{
+    padding: 18px 18px 18px 18px;
+    border: solid 2px black;
+}
+#clock{
+    padding: 18px 18px 18px 18px;
+    border: solid 2px black;
+    font-size: 50px;
+    text-align: center;
+}
