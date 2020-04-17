@@ -14,12 +14,13 @@ const getRemainTime = deadline => {
         }
 };
 
-const countdown = (deadline, elem, finalMessage) =>{
+const countdown = (deadline, elem, titulo,finalMessage) =>{
     const el = document.getElementById(elem);
 
     const timeUpdate = setInterval( () => {
         let t = getRemainTime(deadline);
-        el.innerHTML=`${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s`;
+        el.innerHTML=`<div class="Title" ><h1>${titulo}</h1>
+        <div>${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s</div>`;
         
         if(t.remainTime <=1) {
             clearInterval(timeUpdate)
@@ -28,4 +29,4 @@ const countdown = (deadline, elem, finalMessage) =>{
     },1000)
 }
 
-countdown('Apr 17 2020 01:14:37 GMT-0500','clock','Me cago en Java');
+countdown('Apr 27 2020 01:14:37 GMT-0500','clock','Aniversario','Me cago en Java');
