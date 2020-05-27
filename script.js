@@ -74,7 +74,6 @@ const countdown = (deadline, titulo,finalMessage) =>{
             deco7.addEventListener('click',rosas);
             clock.addEventListener('click',final);
             dedicatoria.addEventListener('click',dedi);
-            video1.addEventListener('click',favoritaP);
             //Creando imagenes segunda cara
             //Fontdecos           
             var fontdeco1 = document.createElement('img');
