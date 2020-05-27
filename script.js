@@ -17,6 +17,7 @@ const getRemainTime = deadline => {
 const countdown = (deadline, titulo,finalMessage) =>{
     const clock = document.getElementById("clock");
     const image = document.getElementById('image');
+    const video = document.getElementById('video');
     const dedicatoria = document.getElementById('Dedicatoria');
 
     const timeUpdate = setInterval( () => {
@@ -38,6 +39,9 @@ const countdown = (deadline, titulo,finalMessage) =>{
             <img src="img/Michita.gif" class="deco5">
             <img src="img/Rosas.png" class="deco6">
             <img src="img/Rosas.png" class="deco7">`
+            video.innerHTML=`<video src="video/miPersonaFavorita.mp4" id="favorita" controls></video>
+            <video src="video/moreThanWords.mp4" id="more" controls></video>
+            <video src="video/DanceMonkeys.mp4" id="dance" controls></video>`
             dedicatoria.innerHTML=`<h1>G Y M</h1>
             <p>Te amo mucho</p>`
             //Creando imagenes para seleccionar
@@ -53,6 +57,7 @@ const countdown = (deadline, titulo,finalMessage) =>{
             var deco5 = document.getElementsByTagName('img')[8];
             var deco6 = document.getElementsByTagName('img')[9];
             var deco7 = document.getElementsByTagName('img')[10];
+            var video1 = document.getElementById('favorita');
             //Creando sus addeventListener
             img1.addEventListener('click',foto1);
             deco1.addEventListener('click',pinguinito);
@@ -69,6 +74,7 @@ const countdown = (deadline, titulo,finalMessage) =>{
             deco7.addEventListener('click',rosas);
             clock.addEventListener('click',final);
             dedicatoria.addEventListener('click',dedi);
+            video1.addEventListener('click',favoritaP);
             //Creando imagenes segunda cara
             //Fontdecos           
             var fontdeco1 = document.createElement('img');
@@ -93,7 +99,7 @@ const countdown = (deadline, titulo,finalMessage) =>{
                 var p4 = document.createElement('p');
                 ctn4.appendChild(p4);
                 ctn4.setAttribute("class","mensajeD");
-                var msg4 = document.createTextNode("¡Me vuelvo loco cada vez que te veo sonreír! Ojalá eso sea lo primero que vea todas las mañanas durante el resto de mi vida.");
+                var msg4 = document.createTextNode("¡Mi mayor alegria es ver tu hermosa sonrisa! Ojalá eso sea lo primero que vea todas las mañanas durante el resto de mi vida.");
                 p4.appendChild(msg4);
             //Gif
             //*Gif1
@@ -282,11 +288,10 @@ const countdown = (deadline, titulo,finalMessage) =>{
                     image.parentNode.removeChild(especial2);
                 });   
             }
-            
 }
     },1000)
 }
-countdown('Apr 25 2020 24:00:00 GMT-0500','Aniversario','Feliz aniversario mi reina hermosa');
+countdown('May 26 2020 24:00:00 GMT-0500','Aniversario','Feliz aniversario mi reina hermosa');
 
 
 

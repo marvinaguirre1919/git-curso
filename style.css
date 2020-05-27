@@ -156,6 +156,28 @@
     transition: color 2s;
     animation: love 3s linear 3;
 }
+/*Videos*/
+#favorita{
+    width: 100px;
+    position: absolute;
+    left: 515px;
+    top: 238px;
+}
+
+#more{
+    width: 100px;
+    position: absolute;
+    left: 625px;
+    top: 238px;
+}
+
+
+#dance{
+    width: 100px;
+    position: absolute;
+    left: 735px;
+    top: 238px;
+}
 
 /*Animaciones */
 @keyframes mensaje {
@@ -416,6 +438,7 @@
     border: #d81204 solid 8px;
     animation: especial2 5s linear ;
 }
+
 /*Animaciones segunda cara*/
 @keyframes mensajea {
     0%  {transform:translate(500px,400px);width:100px;height: 100px; font-size: xx-small;}
