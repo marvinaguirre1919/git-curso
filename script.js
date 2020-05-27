@@ -291,7 +291,7 @@ const countdown = (deadline, titulo,finalMessage) =>{
 }
     },1000)
 }
-countdown('May 26 2020 24:00:00 GMT-0500','Aniversario','Feliz aniversario mi reina hermosa');
+countdown('May 27 2020 10:30:00 GMT-0500','Aniversario','Feliz aniversario mi reina hermosa');
 
 
 
